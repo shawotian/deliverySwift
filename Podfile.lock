@@ -1,0 +1,85 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.5.1):
+    - CocoaAsyncSocket/GCD (= 7.5.1)
+  - CocoaAsyncSocket/GCD (7.5.1)
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
+  - DateTools (1.7.0)
+  - Fabric (1.6.11)
+  - GVUserDefaults (1.0.2)
+  - JKCountDownButton (1.0.0)
+  - JSONModel (1.7.0)
+  - Masonry (1.0.2)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.12)
+  - REFrostedViewController (2.4.8)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SIOSocket (0.2.0)
+  - SSKeychain (1.4.1)
+  - STAlertView (1.0.0)
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - CocoaAsyncSocket
+  - Crashlytics
+  - DateTools
+  - Fabric
+  - GVUserDefaults
+  - JKCountDownButton
+  - JSONModel
+  - Masonry
+  - MBProgressHUD (~> 0.9.1)
+  - MJRefresh
+  - REFrostedViewController (~> 2.4)
+  - SDWebImage (~> 3.7)
+  - SIOSocket (~> 0.2.0)
+  - SSKeychain
+  - STAlertView
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  CocoaAsyncSocket: e0a7e93b2ffa411592ff87e58524fbbc9b95b4fa
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  JKCountDownButton: 7b30571da56af2e52272a6974413f4a0c83a5e94
+  JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SIOSocket: 2facc0bd02ae72d98c223634a46dd8ebdf9be321
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
+  STAlertView: bfcbdfed87dc7bfb35c04acd5d96aecebb923d48
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: f0540510dd075245befe3cbaaff750f2c58e9e31
+
+COCOAPODS: 1.2.0

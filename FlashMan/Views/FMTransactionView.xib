@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FMTransactionView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择交易类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62p-R3-r43">
+                    <rect key="frame" x="0.0" y="25" width="375" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="KUI-TU-qk9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaC-ua-Zmz">
+                    <rect key="frame" x="15" y="80" width="105" height="45"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Vea-qo-l5h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="全部">
+                        <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0i-D9-ywx">
+                    <rect key="frame" x="135" y="80" width="105" height="45"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="XTT-xZ-ytL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="配送收入">
+                        <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqe-oS-61z">
+                    <rect key="frame" x="255" y="80" width="105" height="45"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="df4-50-Mwm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="提现">
+                        <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qc-45-CFI">
+                    <rect key="frame" x="15" y="140" width="105" height="45"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="3ga-VX-2Np"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="充值金">
+                        <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5y-cN-8t4">
+                    <rect key="frame" x="135" y="140" width="105" height="45"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Rkk-3f-5xr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="押金转余额">
+                        <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQS-6p-jyw">
+                    <rect key="frame" x="255" y="140" width="105" height="45"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ERU-Kj-oNE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="扣违约金">
+                        <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="C5y-cN-8t4" firstAttribute="leading" secondItem="9Qc-45-CFI" secondAttribute="trailing" constant="15" id="0UF-7E-dr0"/>
+                <constraint firstItem="Mqe-oS-61z" firstAttribute="top" secondItem="62p-R3-r43" secondAttribute="bottom" constant="30" id="3UK-I2-tBU"/>
+                <constraint firstAttribute="trailing" secondItem="62p-R3-r43" secondAttribute="trailing" id="5Kn-Gz-Dmu"/>
+                <constraint firstAttribute="trailing" secondItem="nQS-6p-jyw" secondAttribute="trailing" constant="15" id="6Xy-nM-PPg"/>
+                <constraint firstItem="MaC-ua-Zmz" firstAttribute="top" secondItem="62p-R3-r43" secondAttribute="bottom" constant="30" id="6xu-uq-vGW"/>
+                <constraint firstItem="MaC-ua-Zmz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="8MZ-iY-CXu"/>
+                <constraint firstItem="C5y-cN-8t4" firstAttribute="width" secondItem="9Qc-45-CFI" secondAttribute="width" id="F3J-l6-EfU"/>
+                <constraint firstItem="C5y-cN-8t4" firstAttribute="height" secondItem="9Qc-45-CFI" secondAttribute="height" id="Gzo-u9-E1h"/>
+                <constraint firstItem="D0i-D9-ywx" firstAttribute="height" secondItem="MaC-ua-Zmz" secondAttribute="height" id="Jv5-cW-xHg"/>
+                <constraint firstItem="Mqe-oS-61z" firstAttribute="leading" secondItem="D0i-D9-ywx" secondAttribute="trailing" constant="15" id="MNB-JV-Di2"/>
+                <constraint firstAttribute="trailing" secondItem="Mqe-oS-61z" secondAttribute="trailing" constant="15" id="NlA-jb-K8w"/>
+                <constraint firstItem="D0i-D9-ywx" firstAttribute="top" secondItem="62p-R3-r43" secondAttribute="bottom" constant="30" id="RBt-g4-0b5"/>
+                <constraint firstItem="nQS-6p-jyw" firstAttribute="height" secondItem="9Qc-45-CFI" secondAttribute="height" id="TiY-aU-fSX"/>
+                <constraint firstItem="C5y-cN-8t4" firstAttribute="top" secondItem="D0i-D9-ywx" secondAttribute="bottom" constant="15" id="UID-Dl-cvc"/>
+                <constraint firstItem="62p-R3-r43" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZTF-hh-hrW"/>
+                <constraint firstItem="nQS-6p-jyw" firstAttribute="top" secondItem="Mqe-oS-61z" secondAttribute="bottom" constant="15" id="dso-Wg-bco"/>
+                <constraint firstItem="Mqe-oS-61z" firstAttribute="width" secondItem="MaC-ua-Zmz" secondAttribute="width" id="hlC-pY-gzT"/>
+                <constraint firstItem="nQS-6p-jyw" firstAttribute="leading" secondItem="C5y-cN-8t4" secondAttribute="trailing" constant="15" id="hxA-xK-y6M"/>
+                <constraint firstItem="Mqe-oS-61z" firstAttribute="height" secondItem="MaC-ua-Zmz" secondAttribute="height" id="kBW-gY-335"/>
+                <constraint firstItem="9Qc-45-CFI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="qE9-o7-O2Q"/>
+                <constraint firstItem="D0i-D9-ywx" firstAttribute="width" secondItem="MaC-ua-Zmz" secondAttribute="width" id="qmN-2z-2DE"/>
+                <constraint firstItem="62p-R3-r43" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="vyq-vD-OBE"/>
+                <constraint firstItem="D0i-D9-ywx" firstAttribute="leading" secondItem="MaC-ua-Zmz" secondAttribute="trailing" constant="15" id="y3S-WW-m5y"/>
+                <constraint firstItem="nQS-6p-jyw" firstAttribute="width" secondItem="9Qc-45-CFI" secondAttribute="width" id="yhN-MS-Vzw"/>
+                <constraint firstItem="9Qc-45-CFI" firstAttribute="top" secondItem="MaC-ua-Zmz" secondAttribute="bottom" constant="15" id="ysa-dp-Epg"/>
+            </constraints>
+            <connections>
+                <outlet property="allBtn" destination="MaC-ua-Zmz" id="XMJ-LX-7tq"/>
+                <outlet property="deductionBtn" destination="nQS-6p-jyw" id="Xur-Of-cd0"/>
+                <outlet property="distributionInBtn" destination="D0i-D9-ywx" id="y4A-tc-Tlu"/>
+                <outlet property="rechargeBtn" destination="9Qc-45-CFI" id="VuS-YV-eD7"/>
+                <outlet property="transferBtn" destination="C5y-cN-8t4" id="gp6-fB-Jg0"/>
+                <outlet property="withdrawBtn" destination="Mqe-oS-61z" id="Xrq-F6-7CY"/>
+            </connections>
+        </view>
+    </objects>
+</document>

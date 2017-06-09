@@ -1,0 +1,168 @@
+//
+//  FlashMan-Prefix.pch
+//  FlashMan
+//
+//  Created by dianda on 2017/1/5.
+//  Copyright © 2017年 taitanxiami. All rights reserved.
+//
+
+#ifndef FlashMan_Prefix_pch
+#define FlashMan_Prefix_pch
+
+#import "WXApi.h"
+#import "BaseApi.h"
+#import "APPConstant.h"
+#import "UIColor+expanded.h"
+#import "APPConfig.h"
+#import <UIViewController+REFrostedViewController.h>
+#import <REFrostedViewController.h>
+#import "FMNavigationController.h"
+#import <Masonry.h>
+#import "JSONModel.h"
+#import <MJRefresh.h>
+#import <AFNetworking.h>
+#import "NetRequestClass.h"
+#import "UserDefaultsUtils.h"
+#import "AppUtils.H"
+#import "MBProgressHUD.h"
+#import "XHView.h"
+#import "Helper.h"
+#import <UIImageView+WebCache.h>
+#import "SSKeychain.h"
+#import "DateTools.h"
+#import "GVUserDefaults+Properties.h"
+#import "GCDAsyncSocket.h" // for TCP
+#import "GCDAsyncUdpSocket.h" // for UDP
+
+
+
+
+
+
+//********systemVersion********
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+//*************登陆状态及存储的值************
+#define loginStatus    @"flashManloginStatus"
+#define kEverLaunched  @"flashManeverLaunched"
+#define kFirstLaunched @"flashManfirstLaunched"
+
+//*********存储的用户信息**********
+#define kUserPhoneNum   @"flashManPhoneNum"
+#define kToken  @"flashMantoken"
+#define kPassword @"flashManPassword"
+#define kCURENTVIP @"flashManDDCURRENTCIP"
+#define kCURRENTVIPEXPERIENCE  @"flashManExperience"
+#define kLOGINCOUNT  @"flashManloginCount"
+#define kORDERTIMES  @"flashManorderTimes"
+#define kFROMLAUNGCH  @"flashManfromlaungch"
+//********返回数据的常用key***********
+
+#define kTAG  @"tag"
+#define kSUCCESS @"success"
+#define kMESSAGE @"message"
+#define kERROR    @"error"
+#define kTOKENEXPIRED @"Token expired"
+#define kSTATUS  @"status"
+
+#define kPUSHMESSAGENOTIFICATION  @"pushmessage"
+
+#define kBEANUSAGE  0.05
+#define kLIMIT  15
+#define kOFFSET @"offset"
+
+#define APP_DOWNLOADURL @"https://itunes.apple.com/us/app/%E7%8C%AA%E8%A1%8C%E4%BE%A0/id1209468418?l=zh&ls=1&mt=8"
+
+//测试环境
+
+
+#if DEBUG
+//测试环境
+//#define SERVER_ADDRESS @"http://192.168.1.251:50000"
+
+//预发布环境
+#define SERVER_ADDRESS @"http://211.152.32.59:50000"
+#else
+//生产环境
+#define SERVER_ADDRESS @"http://psappapi.dd528.com"
+#endif
+
+
+//获取手机验证码
+#define kSENDCODE @"/v1/user/sendCode"
+//登录
+#define kLOGIN @"/v1/user/login"
+//注册
+#define kREGISTER @"/v1/user/register"
+//订单列表
+#define kORDERLIST @"/v1/order/seckill/list"
+
+//接单
+#define kACCEPTORDERS @"/v1/order/seckill"
+
+//订单详情
+#define kORDERDETAIL @"/v1/order/seckill/detail"
+
+//冻结款项明细
+#define KFRESSZEDETAIL @"/v1/wallet/deposit/frozenDetails"
+
+//交货款
+#define kPAYMENTLIST  @"/v1/pay/goods/list"
+
+//根据订单状态查询订单
+#define kORDERLISTSTATE @"/v1/order/delivery/listOrders"
+#define kHISTORYORDERLIST @"/v1/order/delivery/historyOrder"
+//取货
+#define kGETGOODS @"/v1/order/delivery/getGoods"
+//拒收
+#define kREJECTGOODS @"/v1/order/delivery/refuse"
+//送达
+#define kSENDARRIVED @"/v1/order/delivery/sendComplete"
+//支付是否成功校验
+#define  kCHECKPAYORDERSTATUE @"/v1/order/delivery/checkPayOrderStatue"
+
+
+//出示二维码
+//#define kQRCODEURL @""
+
+// 当前前置仓
+#define kCURRENTWAREHOURSE  @"/v1/user/warehouseInfo"
+
+#define kBINDWAREHOUSE @"/v1/user/bindWarehouse"
+//我的钱包
+#define kMYWELLEDGE @"/v1/wallet"
+//提现
+#define kWITHDRAW @"/v1/wallet/balance/encash"
+//提现验证码
+#define kCHECKCODE @"/v1/validateCode/encash"
+//余额明细
+#define kBALANCERECORDS @"/v1/wallet/balance/records"
+//余额明细详情
+#define kBALANCEDESCRIBTION @"/v1/wallet/balance/detail"
+//提现历史
+#define kWITHDRAWHISTORY @"/v1/wallet"
+//押金明细
+#define kDEPOSITRECORDES @"/v1/wallet/deposit/records"
+//押金转入type ：
+#define kBALANCEPAY @"/v1/wallet/deposit/recharge"
+//余额转入
+#define kBALANCEDEPOSITIN @"/v1/wallet/balance/depositIn"
+//统一下单
+#define kWEIXINCREATE @"http://211.152.32.59/weixin/create"
+//绑定支付宝
+#define kADDALIPAYACCOUNT @"/v1/wallet/balance/addAlipayAccount"
+//验证当前手机号是否绑定了支付宝（获取提现账户列表）
+#define kCHECKPHONEALIPAY @"/v1/wallet/balance/tradeAccountList"
+#define kDELETEALIPYNUM @"/v1/wallet/balance/deleteAlipayAccount"
+//交货款
+#define kSUBMITGOODS @"/v1/pay/goods/submit"
+//联系客服
+#define kCUSTOMSERVER @"/v1/setting/telephone"
+////从服务器端获取微信支付的参数信息
+//#define kWECHATPARAMER @""
+
+#endif /* FlashMan_Prefix_pch */
